@@ -11,7 +11,7 @@ public class LeapYear {
 		boolean byFour = (year%4) == 0;
 		boolean byOneHundred = (year%100) != 0;
 		boolean byFourHundred = (year%400) == 0;
-		boolean LeapYear = byFour && byOneHundred || byFourHundred;
+		boolean LeapYear = (byFour && byOneHundred) || byFourHundred;
 		System.out.println(LeapYear);
 
 		// TODO Auto-generated method stub
